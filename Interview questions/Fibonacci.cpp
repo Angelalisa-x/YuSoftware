@@ -16,11 +16,11 @@ int Pheponatch(int N)
         return 1;
      
     return Pheponatch(N-1) + Pheponatch(N-2);
-
+    **********************************/
+   
     int result[2] = {0,1};
 	if(N < 2)
 		return result[N];
-    **********************************/
 		
 	long fibNMinusOne = 1;
 	long fibNMinusTwo = 0;
