@@ -24,4 +24,14 @@ int main()
     printf("&r.affter: %p\n", &r.after);
 
 
+    printf("sizeof(b): %d\n", sizeof(b));
+
+
 }
+
+// sizeof(r): 24
+// sizeof(r.befor): 8
+// sizeof(r.affter): 8
+// &r.before: 0x7fff7290e5f0
+// &r.affter: 0x7fff7290e600
+// sizeof(b): 1
