@@ -13,6 +13,7 @@ int main()
     char a = 'a';
     char& b = a;
     char c = 'c';
+    char* d = &a;
 
     tRef r = {&a, b, &c};
 
@@ -25,6 +26,7 @@ int main()
 
 
     printf("sizeof(b): %d\n", sizeof(b));
+    printf("sizeof(*d): %d\n", sizeof(*d));
 
 
 }
@@ -32,6 +34,7 @@ int main()
 // sizeof(r): 24
 // sizeof(r.befor): 8
 // sizeof(r.affter): 8
-// &r.before: 0x7fff7290e5f0
-// &r.affter: 0x7fff7290e600
+// &r.before: 0x7fff97120d10
+// &r.affter: 0x7fff97120d20
 // sizeof(b): 1
+// sizeof(*d): 1
