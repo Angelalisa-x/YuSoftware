@@ -1,12 +1,12 @@
 #include <iostream>
-#include "seqList.h"
+#include "staticList.h"
 
 
 using namespace DTLib;
 
 int main()
 {
-    SeqList<int>* l = NULL;
+    StaticList<int, 6> l;
 
     return 0;
 }
